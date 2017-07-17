@@ -1,0 +1,6 @@
+framework module Pods_WezrUITests {
+  umbrella header "Pods-WezrUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

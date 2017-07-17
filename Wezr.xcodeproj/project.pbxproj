@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5CBAD1C307B495514F53FE48 /* Pods_Wezr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D10FF45F35202834A0A8C6A /* Pods_Wezr.framework */; };
+		6D2BFC622B1A61ACE4CED5D8 /* Pods_WezrTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE36BD102322520037AE3DDD /* Pods_WezrTests.framework */; };
 		A2683EB81F1C784500997911 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2683EB71F1C784500997911 /* AppDelegate.swift */; };
 		A2683EBA1F1C784500997911 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2683EB91F1C784500997911 /* ViewController.swift */; };
 		A2683EBD1F1C784500997911 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2683EBB1F1C784500997911 /* Main.storyboard */; };
@@ -14,6 +16,7 @@
 		A2683EC21F1C784500997911 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2683EC01F1C784500997911 /* LaunchScreen.storyboard */; };
 		A2683ECD1F1C784600997911 /* WezrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2683ECC1F1C784600997911 /* WezrTests.swift */; };
 		A2683ED81F1C784600997911 /* WezrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2683ED71F1C784600997911 /* WezrUITests.swift */; };
+		BFA81170D3950849DB68B5F0 /* Pods_WezrUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC3E387190572DB4D2BB98EE /* Pods_WezrUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		044E112A86D99372B3610F3E /* Pods-WezrTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WezrTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WezrTests/Pods-WezrTests.debug.xcconfig"; sourceTree = "<group>"; };
+		50D672104775ACEEDB75D22C /* Pods-Wezr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wezr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wezr/Pods-Wezr.debug.xcconfig"; sourceTree = "<group>"; };
+		6D10FF45F35202834A0A8C6A /* Pods_Wezr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wezr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2683EB41F1C784500997911 /* Wezr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wezr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2683EB71F1C784500997911 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2683EB91F1C784500997911 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +53,12 @@
 		A2683ED31F1C784600997911 /* WezrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WezrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2683ED71F1C784600997911 /* WezrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WezrUITests.swift; sourceTree = "<group>"; };
 		A2683ED91F1C784600997911 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C882FD1A88C6175BD6DE9C95 /* Pods-WezrUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WezrUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WezrUITests/Pods-WezrUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DE36BD102322520037AE3DDD /* Pods_WezrTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WezrTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8852F1A88CAC67688F2FF9A /* Pods-WezrTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WezrTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WezrTests/Pods-WezrTests.release.xcconfig"; sourceTree = "<group>"; };
+		EC3E387190572DB4D2BB98EE /* Pods_WezrUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WezrUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF8499E00E79F13365CD9928 /* Pods-WezrUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WezrUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WezrUITests/Pods-WezrUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FB4FAFB6494FFD5BBC1A2732 /* Pods-Wezr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wezr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wezr/Pods-Wezr.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CBAD1C307B495514F53FE48 /* Pods_Wezr.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D2BFC622B1A61ACE4CED5D8 /* Pods_WezrTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +82,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFA81170D3950849DB68B5F0 /* Pods_WezrUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A2D67A26A230B7AF06E08EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D10FF45F35202834A0A8C6A /* Pods_Wezr.framework */,
+				DE36BD102322520037AE3DDD /* Pods_WezrTests.framework */,
+				EC3E387190572DB4D2BB98EE /* Pods_WezrUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A2683EAB1F1C784500997911 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +106,8 @@
 				A2683ECB1F1C784600997911 /* WezrTests */,
 				A2683ED61F1C784600997911 /* WezrUITests */,
 				A2683EB51F1C784500997911 /* Products */,
+				C2A05CA3F76E19BFA9C72457 /* Pods */,
+				6A2D67A26A230B7AF06E08EA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +152,19 @@
 			path = WezrUITests;
 			sourceTree = "<group>";
 		};
+		C2A05CA3F76E19BFA9C72457 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				50D672104775ACEEDB75D22C /* Pods-Wezr.debug.xcconfig */,
+				FB4FAFB6494FFD5BBC1A2732 /* Pods-Wezr.release.xcconfig */,
+				044E112A86D99372B3610F3E /* Pods-WezrTests.debug.xcconfig */,
+				E8852F1A88CAC67688F2FF9A /* Pods-WezrTests.release.xcconfig */,
+				C882FD1A88C6175BD6DE9C95 /* Pods-WezrUITests.debug.xcconfig */,
+				EF8499E00E79F13365CD9928 /* Pods-WezrUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A2683EDC1F1C784600997911 /* Build configuration list for PBXNativeTarget "Wezr" */;
 			buildPhases = (
+				B04387EF9199064E69734509 /* [CP] Check Pods Manifest.lock */,
 				A2683EB01F1C784500997911 /* Sources */,
 				A2683EB11F1C784500997911 /* Frameworks */,
 				A2683EB21F1C784500997911 /* Resources */,
+				45075D6E31229F1596D4B505 /* [CP] Embed Pods Frameworks */,
+				AB2CF1F030B93A9A02187D73 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A2683EDF1F1C784600997911 /* Build configuration list for PBXNativeTarget "WezrTests" */;
 			buildPhases = (
+				61E2D557749B8A0F26B50DFD /* [CP] Check Pods Manifest.lock */,
 				A2683EC41F1C784600997911 /* Sources */,
 				A2683EC51F1C784600997911 /* Frameworks */,
 				A2683EC61F1C784600997911 /* Resources */,
+				8815987E7B22DDBA73168E84 /* [CP] Embed Pods Frameworks */,
+				FD97D1C37FD6CE6743C9F44E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A2683EE21F1C784600997911 /* Build configuration list for PBXNativeTarget "WezrUITests" */;
 			buildPhases = (
+				DFF744E01B21C3177094B271 /* [CP] Check Pods Manifest.lock */,
 				A2683ECF1F1C784600997911 /* Sources */,
 				A2683ED01F1C784600997911 /* Frameworks */,
 				A2683ED11F1C784600997911 /* Resources */,
+				077727CDB1FBA5EEE3B5D701 /* [CP] Embed Pods Frameworks */,
+				F75AC0E976312446F11CB262 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +305,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		077727CDB1FBA5EEE3B5D701 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WezrUITests/Pods-WezrUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		45075D6E31229F1596D4B505 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wezr/Pods-Wezr-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61E2D557749B8A0F26B50DFD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8815987E7B22DDBA73168E84 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WezrTests/Pods-WezrTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB2CF1F030B93A9A02187D73 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wezr/Pods-Wezr-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B04387EF9199064E69734509 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DFF744E01B21C3177094B271 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F75AC0E976312446F11CB262 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WezrUITests/Pods-WezrUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD97D1C37FD6CE6743C9F44E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WezrTests/Pods-WezrTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A2683EB01F1C784500997911 /* Sources */ = {
@@ -415,6 +602,7 @@
 		};
 		A2683EDD1F1C784600997911 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50D672104775ACEEDB75D22C /* Pods-Wezr.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 36C5PY3HAP;
@@ -428,6 +616,7 @@
 		};
 		A2683EDE1F1C784600997911 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB4FAFB6494FFD5BBC1A2732 /* Pods-Wezr.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 36C5PY3HAP;
@@ -441,6 +630,7 @@
 		};
 		A2683EE01F1C784600997911 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 044E112A86D99372B3610F3E /* Pods-WezrTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -456,6 +646,7 @@
 		};
 		A2683EE11F1C784600997911 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8852F1A88CAC67688F2FF9A /* Pods-WezrTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +662,7 @@
 		};
 		A2683EE31F1C784600997911 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C882FD1A88C6175BD6DE9C95 /* Pods-WezrUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 36C5PY3HAP;
@@ -485,6 +677,7 @@
 		};
 		A2683EE41F1C784600997911 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF8499E00E79F13365CD9928 /* Pods-WezrUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 36C5PY3HAP;

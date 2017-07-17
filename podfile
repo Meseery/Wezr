@@ -1,0 +1,17 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '9.0'
+use_frameworks!
+
+target 'Wezr' do
+
+
+
+end
+
+target 'WezrTests' do
+
+end
+
+target 'WezrUITests' do
+
+end
