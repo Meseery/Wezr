@@ -10,7 +10,6 @@
 		5CBAD1C307B495514F53FE48 /* Pods_Wezr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D10FF45F35202834A0A8C6A /* Pods_Wezr.framework */; };
 		6D2BFC622B1A61ACE4CED5D8 /* Pods_WezrTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE36BD102322520037AE3DDD /* Pods_WezrTests.framework */; };
 		A2683EB81F1C784500997911 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2683EB71F1C784500997911 /* AppDelegate.swift */; };
-		A2683EBA1F1C784500997911 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2683EB91F1C784500997911 /* ViewController.swift */; };
 		A2683EBD1F1C784500997911 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2683EBB1F1C784500997911 /* Main.storyboard */; };
 		A2683EBF1F1C784500997911 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2683EBE1F1C784500997911 /* Assets.xcassets */; };
 		A2683EC21F1C784500997911 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2683EC01F1C784500997911 /* LaunchScreen.storyboard */; };
@@ -42,7 +41,6 @@
 		6D10FF45F35202834A0A8C6A /* Pods_Wezr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wezr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2683EB41F1C784500997911 /* Wezr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wezr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2683EB71F1C784500997911 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A2683EB91F1C784500997911 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A2683EBC1F1C784500997911 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A2683EBE1F1C784500997911 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2683EC11F1C784500997911 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -99,6 +97,34 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A224E9561F1C7CD4006A3A26 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A224E9571F1C7CD8006A3A26 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A224E9581F1C7CDA006A3A26 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A224E9591F1C7CEA006A3A26 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		A2683EAB1F1C784500997911 = {
 			isa = PBXGroup;
 			children = (
@@ -124,8 +150,11 @@
 		A2683EB61F1C784500997911 /* Wezr */ = {
 			isa = PBXGroup;
 			children = (
+				A224E9581F1C7CDA006A3A26 /* Model */,
+				A224E9571F1C7CD8006A3A26 /* Views */,
+				A224E9561F1C7CD4006A3A26 /* Controllers */,
+				A224E9591F1C7CEA006A3A26 /* Utils */,
 				A2683EB71F1C784500997911 /* AppDelegate.swift */,
-				A2683EB91F1C784500997911 /* ViewController.swift */,
 				A2683EBB1F1C784500997911 /* Main.storyboard */,
 				A2683EBE1F1C784500997911 /* Assets.xcassets */,
 				A2683EC01F1C784500997911 /* LaunchScreen.storyboard */,
@@ -449,7 +478,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2683EBA1F1C784500997911 /* ViewController.swift in Sources */,
 				A2683EB81F1C784500997911 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -607,10 +635,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 36C5PY3HAP;
 				INFOPLIST_FILE = Wezr/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.meseery.Wezr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -621,10 +651,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 36C5PY3HAP;
 				INFOPLIST_FILE = Wezr/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.meseery.Wezr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -709,6 +741,7 @@
 				A2683EDE1F1C784600997911 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A2683EDF1F1C784600997911 /* Build configuration list for PBXNativeTarget "WezrTests" */ = {
 			isa = XCConfigurationList;
@@ -717,6 +750,7 @@
 				A2683EE11F1C784600997911 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A2683EE21F1C784600997911 /* Build configuration list for PBXNativeTarget "WezrUITests" */ = {
 			isa = XCConfigurationList;
@@ -725,6 +759,7 @@
 				A2683EE41F1C784600997911 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
