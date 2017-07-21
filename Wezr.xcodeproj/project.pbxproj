@@ -11,7 +11,6 @@
 		6D2BFC622B1A61ACE4CED5D8 /* Pods_WezrTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE36BD102322520037AE3DDD /* Pods_WezrTests.framework */; };
 		A224E95B1F1C8051006A3A26 /* WZAppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A224E95A1F1C8051006A3A26 /* WZAppConstants.swift */; };
 		A224E95E1F1CEA75006A3A26 /* WZExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A224E95D1F1CEA75006A3A26 /* WZExtensions.swift */; };
-		A224E9641F1CF844006A3A26 /* WZForecastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A224E9631F1CF844006A3A26 /* WZForecastService.swift */; };
 		A224E9661F1CFB56006A3A26 /* WZForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = A224E9651F1CFB56006A3A26 /* WZForecast.swift */; };
 		A2683EB81F1C784500997911 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2683EB71F1C784500997911 /* AppDelegate.swift */; };
 		A2683EBD1F1C784500997911 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2683EBB1F1C784500997911 /* Main.storyboard */; };
@@ -23,6 +22,7 @@
 		A272AD9C1F215D5400065303 /* WZForecastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A272AD9B1F215D5400065303 /* WZForecastCell.swift */; };
 		A272AD9E1F215F0700065303 /* WZMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A272AD9D1F215F0700065303 /* WZMainViewController.swift */; };
 		A28793601F1E498D00BCDFEE /* cityList_UK.json in Resources */ = {isa = PBXBuildFile; fileRef = A287935F1F1E498D00BCDFEE /* cityList_UK.json */; };
+		A2BA45341F221F8F008BA7F3 /* WZForecastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BA45331F221F8F008BA7F3 /* WZForecastService.swift */; };
 		BFA81170D3950849DB68B5F0 /* Pods_WezrUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC3E387190572DB4D2BB98EE /* Pods_WezrUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,7 +49,6 @@
 		6D10FF45F35202834A0A8C6A /* Pods_Wezr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wezr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A224E95A1F1C8051006A3A26 /* WZAppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WZAppConstants.swift; sourceTree = "<group>"; };
 		A224E95D1F1CEA75006A3A26 /* WZExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WZExtensions.swift; sourceTree = "<group>"; };
-		A224E9631F1CF844006A3A26 /* WZForecastService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WZForecastService.swift; sourceTree = "<group>"; };
 		A224E9651F1CFB56006A3A26 /* WZForecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WZForecast.swift; sourceTree = "<group>"; };
 		A2683EB41F1C784500997911 /* Wezr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wezr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2683EB71F1C784500997911 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +66,7 @@
 		A272AD9B1F215D5400065303 /* WZForecastCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WZForecastCell.swift; sourceTree = "<group>"; };
 		A272AD9D1F215F0700065303 /* WZMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WZMainViewController.swift; sourceTree = "<group>"; };
 		A287935F1F1E498D00BCDFEE /* cityList_UK.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cityList_UK.json; sourceTree = "<group>"; };
+		A2BA45331F221F8F008BA7F3 /* WZForecastService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WZForecastService.swift; sourceTree = "<group>"; };
 		C882FD1A88C6175BD6DE9C95 /* Pods-WezrUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WezrUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WezrUITests/Pods-WezrUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DE36BD102322520037AE3DDD /* Pods_WezrTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WezrTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8852F1A88CAC67688F2FF9A /* Pods-WezrTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WezrTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WezrTests/Pods-WezrTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -141,7 +141,7 @@
 		A224E9591F1C7CEA006A3A26 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				A224E9621F1CF7F1006A3A26 /* Resources */,
+				A224E9621F1CF7F1006A3A26 /* Services */,
 				A224E95A1F1C8051006A3A26 /* WZAppConstants.swift */,
 			);
 			path = Utils;
@@ -164,12 +164,12 @@
 			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
-		A224E9621F1CF7F1006A3A26 /* Resources */ = {
+		A224E9621F1CF7F1006A3A26 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				A224E9631F1CF844006A3A26 /* WZForecastService.swift */,
+				A2BA45331F221F8F008BA7F3 /* WZForecastService.swift */,
 			);
-			path = Resources;
+			path = Services;
 			sourceTree = "<group>";
 		};
 		A2683EAB1F1C784500997911 = {
@@ -532,11 +532,11 @@
 				A224E9661F1CFB56006A3A26 /* WZForecast.swift in Sources */,
 				A224E95E1F1CEA75006A3A26 /* WZExtensions.swift in Sources */,
 				A272AD9A1F2152BD00065303 /* WZLocation.swift in Sources */,
+				A2BA45341F221F8F008BA7F3 /* WZForecastService.swift in Sources */,
 				A224E95B1F1C8051006A3A26 /* WZAppConstants.swift in Sources */,
 				A272AD9E1F215F0700065303 /* WZMainViewController.swift in Sources */,
 				A272AD9C1F215D5400065303 /* WZForecastCell.swift in Sources */,
 				A2683EB81F1C784500997911 /* AppDelegate.swift in Sources */,
-				A224E9641F1CF844006A3A26 /* WZForecastService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

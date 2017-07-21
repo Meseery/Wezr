@@ -15,7 +15,6 @@ class WZMainViewController: UIViewController {
 
     @IBOutlet weak var loadingImageView: UIImageView!
     @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
-    
 
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var tempLabel: UILabel!
@@ -25,9 +24,13 @@ class WZMainViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     let locationManager = CLLocationManager()
-    var currentLocation : CLLocation!
+    var currentLocation : CLLocation! {
+        didSet {
+            getWeatherForCurrentLocation()
+        }
+    }
     
-    var currentWeather = Weather()
+    var forecastService = ForecastService()
     var forecasts = [Forecast]()
     
     override func viewDidLoad() {
@@ -36,21 +39,16 @@ class WZMainViewController: UIViewController {
         setupTableView()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(true)
-        locationAuthorizationStatus()
-    }
-    
     func setupTableView()  {
         tableView.dataSource = self
     }
     
     func updateMainUI () {
-        dateLabel.text = currentWeather.date
-        tempLabel.text = "\(String(currentWeather.currentTemp))°"
-        locationLabel.text = currentWeather.cityName
-        weatherTypeLabel.text = currentWeather.weatherType
-        weatherImage.image = UIImage(named: currentWeather.weatherType)
+        dateLabel.text = forecastService.date
+        tempLabel.text = "\(String(forecastService.currentTemp))°"
+        locationLabel.text = forecastService.cityName
+        weatherTypeLabel.text = forecastService.weatherType
+        weatherImage.image = UIImage(named: forecastService.weatherType)
         
         loadingImageView.isHidden = true
         loadingIndicator.stopAnimating()
@@ -70,26 +68,39 @@ extension WZMainViewController:CLLocationManagerDelegate {
     func setupLocationManager() {
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.distanceFilter = 300 // prevent multiple location updates
         locationManager.requestWhenInUseAuthorization()
         locationManager.startMonitoringSignificantLocationChanges()
+        locationManager.stopUpdatingLocation()
     }
     
-    func locationAuthorizationStatus () {
-        var notGotLocation = true
-        repeat {
-            if CLLocationManager.authorizationStatus() == .authorizedWhenInUse{
-                notGotLocation = false
-                currentLocation = locationManager.location
-                Location.sharedInstance.latitude = currentLocation.coordinate.latitude
-                Location.sharedInstance.longitude = currentLocation.coordinate.longitude
-                currentWeather.downloadWeather {
-                    self.downloadForecast() {
-                        self.updateMainUI()
-                    }
-                }
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        if status == .authorizedWhenInUse || status == .authorizedAlways {
+            self.locationManager.startUpdatingLocation()
+        }else if status == .denied || status == .restricted{
+            // Set default location = London
+            currentLocation = CLLocation(latitude: Double(-0.118092), longitude: Double(51.509865))
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if locations.count == 0 {
+            return
+        }
+        currentLocation = locations.last
+    }
+    
+    func getWeatherForCurrentLocation()  {
+        guard let _ = currentLocation else {
+            return
+        }
+        Location.sharedInstance.latitude = currentLocation.coordinate.latitude
+        Location.sharedInstance.longitude = currentLocation.coordinate.longitude
+        forecastService.downloadWeather {
+            self.downloadForecast() {
+                self.updateMainUI()
             }
-        } while(notGotLocation)
-        
+        }
     }
     
     func downloadForecast(completed: @escaping DownloadComplete){
@@ -131,7 +142,7 @@ extension WZMainViewController:UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as? WZForecastCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "forecastCell", for: indexPath) as? WZForecastCell {
             let forecast = forecasts[indexPath.row]
             cell.configureCell(forecast: forecast)
             return cell
