@@ -3,9 +3,8 @@ platform :ios, '9.0'
 use_frameworks!
 
 target 'Wezr' do
-
-
-
+    pod 'Alamofire'
+    pod 'SwiftyJSON'
 end
 
 target 'WezrTests' do

@@ -9,12 +9,20 @@
 /* Begin PBXBuildFile section */
 		5CBAD1C307B495514F53FE48 /* Pods_Wezr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D10FF45F35202834A0A8C6A /* Pods_Wezr.framework */; };
 		6D2BFC622B1A61ACE4CED5D8 /* Pods_WezrTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE36BD102322520037AE3DDD /* Pods_WezrTests.framework */; };
+		A224E95B1F1C8051006A3A26 /* WZAppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A224E95A1F1C8051006A3A26 /* WZAppConstants.swift */; };
+		A224E95E1F1CEA75006A3A26 /* WZExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A224E95D1F1CEA75006A3A26 /* WZExtensions.swift */; };
+		A224E9641F1CF844006A3A26 /* WZForecastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A224E9631F1CF844006A3A26 /* WZForecastService.swift */; };
+		A224E9661F1CFB56006A3A26 /* WZForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = A224E9651F1CFB56006A3A26 /* WZForecast.swift */; };
 		A2683EB81F1C784500997911 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2683EB71F1C784500997911 /* AppDelegate.swift */; };
 		A2683EBD1F1C784500997911 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2683EBB1F1C784500997911 /* Main.storyboard */; };
 		A2683EBF1F1C784500997911 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2683EBE1F1C784500997911 /* Assets.xcassets */; };
 		A2683EC21F1C784500997911 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2683EC01F1C784500997911 /* LaunchScreen.storyboard */; };
 		A2683ECD1F1C784600997911 /* WezrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2683ECC1F1C784600997911 /* WezrTests.swift */; };
 		A2683ED81F1C784600997911 /* WezrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2683ED71F1C784600997911 /* WezrUITests.swift */; };
+		A272AD9A1F2152BD00065303 /* WZLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A272AD991F2152BD00065303 /* WZLocation.swift */; };
+		A272AD9C1F215D5400065303 /* WZForecastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A272AD9B1F215D5400065303 /* WZForecastCell.swift */; };
+		A272AD9E1F215F0700065303 /* WZMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A272AD9D1F215F0700065303 /* WZMainViewController.swift */; };
+		A28793601F1E498D00BCDFEE /* cityList_UK.json in Resources */ = {isa = PBXBuildFile; fileRef = A287935F1F1E498D00BCDFEE /* cityList_UK.json */; };
 		BFA81170D3950849DB68B5F0 /* Pods_WezrUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC3E387190572DB4D2BB98EE /* Pods_WezrUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +47,10 @@
 		044E112A86D99372B3610F3E /* Pods-WezrTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WezrTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WezrTests/Pods-WezrTests.debug.xcconfig"; sourceTree = "<group>"; };
 		50D672104775ACEEDB75D22C /* Pods-Wezr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wezr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wezr/Pods-Wezr.debug.xcconfig"; sourceTree = "<group>"; };
 		6D10FF45F35202834A0A8C6A /* Pods_Wezr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wezr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A224E95A1F1C8051006A3A26 /* WZAppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WZAppConstants.swift; sourceTree = "<group>"; };
+		A224E95D1F1CEA75006A3A26 /* WZExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WZExtensions.swift; sourceTree = "<group>"; };
+		A224E9631F1CF844006A3A26 /* WZForecastService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WZForecastService.swift; sourceTree = "<group>"; };
+		A224E9651F1CFB56006A3A26 /* WZForecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WZForecast.swift; sourceTree = "<group>"; };
 		A2683EB41F1C784500997911 /* Wezr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wezr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2683EB71F1C784500997911 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2683EBC1F1C784500997911 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -51,6 +63,10 @@
 		A2683ED31F1C784600997911 /* WezrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WezrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2683ED71F1C784600997911 /* WezrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WezrUITests.swift; sourceTree = "<group>"; };
 		A2683ED91F1C784600997911 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A272AD991F2152BD00065303 /* WZLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WZLocation.swift; sourceTree = "<group>"; };
+		A272AD9B1F215D5400065303 /* WZForecastCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WZForecastCell.swift; sourceTree = "<group>"; };
+		A272AD9D1F215F0700065303 /* WZMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WZMainViewController.swift; sourceTree = "<group>"; };
+		A287935F1F1E498D00BCDFEE /* cityList_UK.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cityList_UK.json; sourceTree = "<group>"; };
 		C882FD1A88C6175BD6DE9C95 /* Pods-WezrUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WezrUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WezrUITests/Pods-WezrUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DE36BD102322520037AE3DDD /* Pods_WezrTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WezrTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8852F1A88CAC67688F2FF9A /* Pods-WezrTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WezrTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WezrTests/Pods-WezrTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -100,6 +116,7 @@
 		A224E9561F1C7CD4006A3A26 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A272AD9D1F215F0700065303 /* WZMainViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -107,6 +124,7 @@
 		A224E9571F1C7CD8006A3A26 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A272AD9B1F215D5400065303 /* WZForecastCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -114,6 +132,8 @@
 		A224E9581F1C7CDA006A3A26 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A224E9651F1CFB56006A3A26 /* WZForecast.swift */,
+				A272AD991F2152BD00065303 /* WZLocation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -121,8 +141,35 @@
 		A224E9591F1C7CEA006A3A26 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				A224E9621F1CF7F1006A3A26 /* Resources */,
+				A224E95A1F1C8051006A3A26 /* WZAppConstants.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		A224E95C1F1CEA5C006A3A26 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A224E95D1F1CEA75006A3A26 /* WZExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A224E95F1F1CF794006A3A26 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A287935F1F1E498D00BCDFEE /* cityList_UK.json */,
+			);
+			name = "Supporting Files";
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		A224E9621F1CF7F1006A3A26 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A224E9631F1CF844006A3A26 /* WZForecastService.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		A2683EAB1F1C784500997911 = {
@@ -150,6 +197,7 @@
 		A2683EB61F1C784500997911 /* Wezr */ = {
 			isa = PBXGroup;
 			children = (
+				A224E95C1F1CEA5C006A3A26 /* Extensions */,
 				A224E9581F1C7CDA006A3A26 /* Model */,
 				A224E9571F1C7CD8006A3A26 /* Views */,
 				A224E9561F1C7CD4006A3A26 /* Controllers */,
@@ -159,6 +207,7 @@
 				A2683EBE1F1C784500997911 /* Assets.xcassets */,
 				A2683EC01F1C784500997911 /* LaunchScreen.storyboard */,
 				A2683EC31F1C784500997911 /* Info.plist */,
+				A224E95F1F1CF794006A3A26 /* Supporting Files */,
 			);
 			path = Wezr;
 			sourceTree = "<group>";
@@ -265,6 +314,7 @@
 		A2683EAC1F1C784500997911 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = WZ;
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Meseery;
@@ -314,6 +364,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2683EC21F1C784500997911 /* LaunchScreen.storyboard in Resources */,
+				A28793601F1E498D00BCDFEE /* cityList_UK.json in Resources */,
 				A2683EBF1F1C784500997911 /* Assets.xcassets in Resources */,
 				A2683EBD1F1C784500997911 /* Main.storyboard in Resources */,
 			);
@@ -478,7 +529,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A224E9661F1CFB56006A3A26 /* WZForecast.swift in Sources */,
+				A224E95E1F1CEA75006A3A26 /* WZExtensions.swift in Sources */,
+				A272AD9A1F2152BD00065303 /* WZLocation.swift in Sources */,
+				A224E95B1F1C8051006A3A26 /* WZAppConstants.swift in Sources */,
+				A272AD9E1F215F0700065303 /* WZMainViewController.swift in Sources */,
+				A272AD9C1F215D5400065303 /* WZForecastCell.swift in Sources */,
 				A2683EB81F1C784500997911 /* AppDelegate.swift in Sources */,
+				A224E9641F1CF844006A3A26 /* WZForecastService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -635,7 +693,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 36C5PY3HAP;
 				INFOPLIST_FILE = Wezr/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.meseery.Wezr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -651,7 +709,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 36C5PY3HAP;
 				INFOPLIST_FILE = Wezr/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.meseery.Wezr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
